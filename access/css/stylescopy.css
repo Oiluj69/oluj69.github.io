@@ -1,0 +1,388 @@
+/*  Documento CSS para feliz pingüino Flappy freeCodeCamp  */
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+nav.navbar {
+    width: 100%;
+    padding: 10px;
+    background: linear-gradient(45deg, rgb(247, 255, 222), rgb(0, 0, 0), rgb(0, 0, 0));
+    position: fixed;
+    z-index: 1;
+}
+
+span {
+    color: antiquewhite;
+}
+
+span:hover {
+    color: darkgray;
+}
+
+.dropdown-toggle {
+    outline: 0;
+}
+
+#contenido {
+    position: fixed;
+    width: 230px;
+    height: 342px;
+    background-color: rgba(00, 00, 00, .90);
+    padding-top: 10px;
+    left: -230px;
+    transition: all 500ms linear;
+    z-index: 3;
+    top: 60px;
+}
+
+#contenido.active {
+    left: 0;
+}
+
+#contenido ul li {
+    text-align: center;
+    padding: 15px 10px;
+    border-bottom: 1px solid rgba(100, 100, 100, .3);
+    list-style: none;
+    color: antiquewhite;
+    margin-left: -50px;
+}
+
+#abrir {
+    background: none;
+    border: none;
+    display: none;
+}
+
+.al a:hover {
+    color: darkgray;
+}
+
+.position {
+    position: relative;
+}
+
+.row {
+    max-width: 100%;
+
+}
+
+.section_1 {
+    max-width: 100%;
+    padding-top: 60px;
+    color: aliceblue;
+}
+
+.section_1 img {
+    max-width: 100%;
+}
+
+.ourservice {
+    width: 100%;
+    font-family: Cambria;
+}
+
+.article_1 {
+    max-width: 100%;
+    font-size: 16px;
+    font-family: verdana;
+    line-height: 1.5;
+    text-align: justify;
+}
+
+.article_1 a {
+    color: #000;
+}
+
+.section_2 {
+    text-align: center;
+}
+
+.section_2 h3 {
+    font-family: "Cambria";
+}
+
+.section_3 {
+    border-radius: 10px;
+    background-color: rgba(00, 00, 00, .80);
+    box-shadow: 3px 3px 15px 0 rgb(55, 104, 237);
+}
+
+.div_title {
+    font-family: Cambria;
+    color: #ebf810;
+}
+
+.div_image {
+    width: 100%;
+}
+
+.div_image img {
+    max-width: 93%;
+}
+
+.div_blockquote p {
+    font-family: Verdana;
+    color: aliceblue;
+    text-align: justify;
+}
+
+button {
+    width: 90%;
+    padding: 6px;
+    border: none;
+    background-color: #ebf810;
+    border-radius: 10px;
+    box-shadow: 3px 3px 15px 0 rgb(0, 0, 0);
+}
+
+button:hover {
+    background-color: #efb810;
+}
+
+.div_frase {
+    margin-top: 150px;
+    height: 350px;
+    align-items: center;
+}
+
+.div_frase h1 {
+    font-family: "cambria";
+    font-size: 100px;
+    font-weight: 600;
+    color: #ebf810;
+    text-shadow: 10px 5px 5px rgb(45, 45, 251);
+
+}
+
+.div_frase h2 {
+    font-family: "verdana";
+    font-size: 40px;
+    text-shadow: 5px 5px 5px rgb(0, 0, 0);
+}
+
+.ask {
+    font-family: "Cambria";
+    color: rgb(0, 0, 0);
+}
+
+.section_6 {
+    background: linear-gradient(45deg, rgb(0, 0, 0), rgb(0, 0, 0), rgb(247, 255, 222));
+}
+
+.slogan {
+    color: aliceblue;
+    text-shadow: 3px 3px 3px rgb(255, 255, 255) !important;
+}
+
+.section_7 {
+    max-width: 100%;
+}
+
+.section_7 li {
+    max-width: 100%;
+    border: #000 solid 1px;
+}
+
+.section_8 {
+    height: 450px;
+    border-radius: 10px;
+    background-color: rgba(00, 00, 00, .80);
+    box-shadow: 3px 3px 15px 0 rgb(55, 104, 237);
+}
+
+.heading {
+    text-align: justify;
+    border-radius: 10px;
+    background-color: #fff;
+}
+
+.backmessege {
+    width: 100%;
+    background: linear-gradient(45deg, rgb(247, 255, 222), rgb(0, 0, 0), rgb(0, 0, 0));
+}
+
+.messenge {
+    max-width: 80%;
+    margin: auto;
+    border-radius: 10px;
+    background-color: #fff;
+
+}
+
+.messenger {    
+    width: 20% !important;
+    margin: auto;
+}
+
+.gmail {    
+    width: 30% !important;
+    margin: auto;
+    border-left: #000 solid 3px;
+    border-right: #000 solid 3px;
+}
+
+.whatsapp {
+    width: 20% !important;
+    margin: auto;
+    border-radius: 50%;
+}
+
+.ejemplo li {
+    font-family: cambria;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+#costo,
+#diferencia,
+#hosting,
+#dominio,
+#page,
+#later,
+#changes,
+#country,
+#shop,
+#optimation {
+    font-family: Verdana;
+    display: none;
+    text-align: justify;
+}
+
+#costo.active,
+#diferencia.active,
+#hosting.active,
+#dominio.active,
+#page.active,
+#later.active,
+#changes.active,
+#country.active,
+#shop.active,
+#optimation.active {
+    display: block;
+}
+
+#piepagina {
+    max-width: 100%;
+    font-size: 18px;
+    background: linear-gradient(45deg, rgb(0, 0, 0), rgb(0, 0, 0), rgb(247, 255, 222));
+}
+
+
+@media (max-width: 768px) {
+
+    .div_frase h1 {
+        font-size: 80px;
+    }
+
+    .div_frase h2 {
+        font-size: 30px;
+    }
+
+}
+
+
+@media (max-width: 800px) {
+
+    nav.navbar ul li {
+        display: none;
+    }
+
+    #contenido {
+        top: 60px;
+    }
+
+    #abrir {
+        display: block;
+    }
+
+    #abrir svg {
+        width: 30px;
+        height: 30px;
+    }
+
+    .section_1 { 
+        padding-top: 61px;       
+    }
+
+    .div_frase h1 {
+        font-size: 30px;
+    }
+
+    .article_1 {
+        font-size: 14px;
+    }
+
+    .div_frase h2 {
+        font-size: 10px;
+    }
+
+    .messenger {
+        width: 20% !important;
+    }
+
+    .gmail {
+        width: 40% !important;
+    }
+
+    .whatsapp {
+        width: 20% !important;
+    }
+
+
+}
+
+
+
+
+
+
+@keyframes title {
+    from {
+        opacity: 0;
+        scale: 25%;
+    }
+
+    to {
+        opacity: 1;
+        scale: 100%;
+    }
+}
+
+.section_3 {
+    view-timeline-name: --move;
+    view-timeline-axis: block;
+
+    animation-timeline: --move;
+    animation-name: title;
+
+    animation-range: entry 10% cover 40%;
+    animation-fill-mode: both;
+
+}
+
+.div_frase h1 {
+    view-timeline-name: --titulo;
+    view-timeline-axis: block;
+
+    animation-timeline: --titulo;
+    animation-name: title;
+
+    animation-range: entry 10% cover 40%;
+    animation-fill-mode: both;
+}
+
+.div_frase h2 {
+    view-timeline-name: --subtitulo;
+    view-timeline-axis: inherit;
+
+    animation-timeline: --subtitulo;
+    animation-name: title;
+
+    animation-range: entry 40% cover 50%;
+    animation-fill-mode: both;
+}
