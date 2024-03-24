@@ -195,6 +195,10 @@ button:hover {
     box-shadow: 3px 3px 15px 0 rgb(55, 104, 237);
 }
 
+.section_8 a {
+    text-decoration: none;
+}
+
 .heading {
     text-align: justify;
     border-radius: 10px;
